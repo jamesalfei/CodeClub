@@ -1,4 +1,2 @@
-# Created by .ignore support plugin (hsz.mobi)
-.idea
-CodeClub.iml
 node_modules/
+/.idea/workspace.xml

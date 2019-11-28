@@ -2,6 +2,7 @@
 <html lang="en-GB">
 <head>
     <title>My Javascript example</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="MyJavascript.js"></script>
 </head>
 <body>
@@ -10,17 +11,23 @@
 
 <h2>Date and time example</h2>
 
-<button id="button" type="button" onclick="showDateTime()">
+<button id="dateButton" type="button" onclick="showDateTime()">
     Show Date and Time.
 </button>
 
-<p id="demo" style="display: none"></p>
+<p id="date" style="display: none"></p>
 
 <h2>Colour example</h2>
 
 <button id="colourButton" type="button" onclick="changeBackgroundColour()">
     Change background colour to something random
 </button>
+
+<div id="myGame" style="height:300px; width:50%; border: 1px solid black; position: relative;">
+    <button id="gameButton" onmouseover="animateButton()" style="position:absolute;">
+        Click me!
+    </button>
+</div>
 
 </body>
 </html>

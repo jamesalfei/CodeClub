@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>My javascript test</title>
+</head>
+<body>
+
+    <h1>Test page</h1>
+
+    <button id="changeColour" onclick="changeColour()">Change colour</button>
+
+    <script>
+        function changeColour() {
+            document.body.style.backgroundColor = selectRandomColour();
+        }
+
+        function selectRandomColour() {
+            var colours = [
+                "red",
+                "blue",
+                "green",
+                "purple",
+                "yellow",
+                "orange"
+            ];
+            return colours[Math.floor(Math.random() * colours.length)];
+        }
+    </script>
+</body>
+</html>
